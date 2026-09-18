@@ -16,3 +16,9 @@
 (extern_block) @fold
 (comment) @fold
 
+; ── Multiline Collections & Calls Folding ────────────────────────────
+(list_literal) @fold
+(dict_literal) @fold
+(arguments) @fold
+(generic_params) @fold
+

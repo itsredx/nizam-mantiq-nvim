@@ -28,3 +28,36 @@
 (macro_decl ":" @indent.begin)
 (extern_block ":" @indent.begin)
 
+; ── Multiline Open and Close Delimiters Indentation ───────────────────
+(call_expression
+  "(" @indent.begin
+  ")" @indent.end)
+
+(named_function
+  "(" @indent.begin
+  ")" @indent.end)
+
+(anonymous_function
+  "(" @indent.begin
+  ")" @indent.end)
+
+(list_literal
+  "[" @indent.begin
+  "]" @indent.end)
+
+(dict_literal
+  "{" @indent.begin
+  "}" @indent.end)
+
+(index_expression
+  "[" @indent.begin
+  "]" @indent.end)
+
+(generic_params
+  "[" @indent.begin
+  "]" @indent.end)
+
+(interpolation
+  "{" @indent.begin
+  "}" @indent.end)
+
